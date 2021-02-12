@@ -227,6 +227,9 @@ html {
   width: 30px;
   height: 30px;
 }
+.img-icon-50 {
+  width: 50px;
+}
 
 .card-video {
   position: relative;
