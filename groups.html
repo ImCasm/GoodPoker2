@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meus Grupos</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/common/css/styles.css" />
+  </head>
+
+  <body class="bg-light-gray">
+    <div class="row m-0">
+      <!-- Column 1 -->
+      <div class="col-md-3 min-vh-100 bg-dark-green p-5">
+        <div class="text-center mb-5">
+          <img class="logo" src="assets/images/logo3.png" alt="logo" />
+        </div>
+        <div class="main-menu p-0 m-0">
+          <div class="row w-100 align-items-start menu-item">
+            <div class="col-2 col-md-3 col-lg-2 m-0 p-0">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="col-10 col-md-9 col-lg-10 p-0">
+              <a class="" href=""> Comunidade GoodPoker</a>
+            </div>
+          </div>
+
+          <div class="row w-100 align-items-start menu-item">
+            <div class="col-2 col-md-3 col-lg-2 m-0 p-0">
+              <i class="fas fa-address-card"></i>
+            </div>
+            <div class="col-10 col-md-9 col-lg-10 p-0">
+              <a
+                class="m-0"
+                data-toggle="collapse"
+                href="#menuCollapse"
+                role="button"
+                aria-expanded="false"
+                aria-controls="menuCollapse"
+              >
+                Sala de Estudos
+                <i class="fas fa-caret-down ml-2 text-white"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="collapse" id="menuCollapse">
+            <div class="">
+              <a class="menu-subitem" href="">Preparar</a>
+              <a class="menu-subitem" href="">Liberar</a>
+              <a class="menu-subitem" href="">Estudos</a>
+              <a class="menu-subitem" href="">Biblioteca</a>
+            </div>
+          </div>
+
+          <div class="row w-100 align-items-start menu-item">
+            <div class="col-2 col-md-3 col-lg-2 m-0 p-0">
+              <i class="fas fa-user-friends"></i>
+            </div>
+            <div class="col-10 col-md-9 col-lg-10 p-0">
+              <a class="" href=""> Meus Grupos</a>
+            </div>
+          </div>
+
+          <div class="row w-100 align-items-start menu-item">
+            <div class="col-2 col-md-3 col-lg-2 m-0 p-0">
+              <i class="fas fa-file-upload"></i>
+            </div>
+            <div class="col-10 col-md-9 col-lg-10 p-0">
+              <a class="" href=""> Importação</a>
+            </div>
+          </div>
+
+          <div class="row w-100 align-items-start menu-item">
+            <div class="col-2 col-md-3 col-lg-2 m-0 p-0">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="col-10 col-md-9 col-lg-10 p-0">
+              <a class="" href=""> BankRoll</a>
+            </div>
+          </div>
+
+          <div class="text-center mt-5">
+            <button class="btn bg-yellow text-white font-weight-bold w-100">
+              <i class="fas fa-star text-white"></i> Updgrade de Plano
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-md-9 pt-5 pl-2em pb-3">
+        <!-- Dropdown menus -->
+        <div class="row pl-2em d-flex justify-content-end m-1">
+          <div class="col-xl-2 col-lg-3 dropdown mb-2">
+            <a
+              class="btn mt-0 br-15 bg-gray dropdown-toggle text-white"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              x
+              aria-expanded="false"
+            >
+              <img
+                src="assets/images/groups/profile1.png"
+                class="rounded-circle lang-icon"
+                alt="image"
+              />
+
+              <span class="small">Marcos</span>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item text-gray" href="#">Perfil</a>
+              <a class="dropdown-item text-gray" href="#">Suporte</a>
+              <a class="dropdown-item text-gray" href="#">Tutoriais</a>
+              <a class="dropdown-item text-gray" href="#">Avaliar Plataforma</a>
+              <a class="text-gray" href="#" style="padding: 4px 24px">
+                <div
+                  class="small btn bg-white border-secondary mt-0 rounded-pill"
+                >
+                  <span class="small">SAIR</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-xl-2 col-lg-3 dropdown">
+            <a
+              class="btn mt-0 p-2 pr-0 br-15 bg-lang-icon dropdown-toggle text-gray"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              x
+              aria-expanded="false"
+            >
+              <img
+                src="assets/images/languages/portuguese.png"
+                class="rounded-circle lang-icon"
+                alt="image"
+              />
+
+              <span class="small">PT-BR</span>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item img-circle small" href="#">
+                <img
+                  src="assets/images/languages/portuguese.png"
+                  class="img-circle lang-icon"
+                  alt=""
+                />
+                PORTUGUÉS</a
+              >
+              <a class="dropdown-item small" href="#">
+                <img
+                  src="assets/images/languages/english.png"
+                  class="img-circle lang-icon"
+                  alt=""
+                />
+                INGLÉS</a
+              >
+              <a class="dropdown-item small" href="#">
+                <img
+                  src="assets/images/languages/spanish.png"
+                  class="img-circle lang-icon"
+                  alt=""
+                />
+                ESPANHOL
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-7 mt-4">
+            <h3 class="font-rajdhani profile1 m-0">Meus Grupos</h3>
+          </div>
+
+          <div class="col-md-2 dropdown">
+            <button
+              class="btn bg-light-gray dropdown-toggle border-green text-green"
+              type="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="true"
+            >
+              <span class="pl-3 pr-4 font-weight-bold">Todos</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <a
+              href="#"
+              class="btn bg-light-green border-green text-white"
+              type="button"
+              data-toggle="dropdown"
+            >
+              <span class="pl-3 pr-3 font-weight-bold font-size-14"
+                >NOVO GRUPO</span
+              >
+            </a>
+          </div>
+        </div>
+
+        <hr class="mt-2 mb-3 mr-5" />
+
+        <!-- Group cards -->
+
+        <!-- Row 1 -->
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card group-card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-3">
+                  <img
+                    class="group-image w-100 h-100"
+                    src="assets/images/groups/image-example.png"
+                  />
+                  <span class="badge img-badge bg-orange text-white"
+                    >ADMIN</span
+                  >
+                </div>
+                <!-- Body -->
+                <div class="col-md-9 p-3">
+                  <div class="row m-0 justify-content-between">
+                    <div class="">
+                      <h6 class="m-0 text-gray font-weight-bold">
+                        GoodPoker Help
+                      </h6>
+                    </div>
+                    <div class="btn-group dropleft">
+                      <button
+                        type="button"
+                        class="btn m-0 pt-0 pb-0 dropdown-toggle dropdown-group-menu no-focus"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <i class="fas fa-ellipsis-v text-green"></i>
+                      </button>
+                      <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton"
+                      >
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row m-0">
+                    <span class="text-light-gray small font-weight-bold"
+                      >3 de 5 membros</span
+                    >
+                  </div>
+                  <!-- Users list -->
+                  <div class="row mt-3 ml-0 mb-0 mr-0">
+                    <div class="col-2 m-0 p-0">
+                      <img
+                        class="img-icon-group rounded-circle"
+                        src="assets/images/groups/profile1.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-2 m-0 p-0">
+                      <img
+                        class="img-icon-group rounded-circle"
+                        src="assets/images/groups/profile2.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-2 m-0 p-0">
+                      <img
+                        class="img-icon-group rounded-circle"
+                        src="assets/images/groups/profile3.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-2 m-0 p-0">
+                      <a
+                        href="#"
+                        class="img-icon-group img-icon-group-empty rounded-circle d-flex align-items-center justify-content-center"
+                      >
+                        <i class="fas fa-user-plus text-gray"></i>
+                      </a>
+                    </div>
+                    <div class="col-2 m-0 p-0">
+                      <a
+                        href="#"
+                        class="img-icon-group img-icon-group-empty rounded-circle d-flex align-items-center justify-content-center"
+                      >
+                        <i class="fas fa-user-plus text-gray"></i>
+                      </a>
+                    </div>
+                    <div class="col-2 m-0 p-0"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card group-card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-3">
+                  <img
+                    class="group-image w-100 h-100"
+                    src="assets/images/groups/image-example.png"
+                  />
+                  <span class="badge img-badge bg-orange text-white"
+                    >ADMIN</span
+                  >
+                </div>
+                <!-- Body -->
+                <div class="col-md-9 p-3">
+                  <div class="row m-0 justify-content-between">
+                    <div class="">
+                      <h6 class="m-0 text-gray font-weight-bold">
+                        GoodPoker Help
+                      </h6>
+                    </div>
+                    <div class="btn-group dropleft">
+                      <button
+                        type="button"
+                        class="btn m-0 pt-0 pb-0 dropdown-toggle dropdown-group-menu no-focus"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <i class="fas fa-ellipsis-v text-green"></i>
+                      </button>
+                      <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton"
+                      >
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row m-0">
+                    <span class="text-light-gray small font-weight-bold"
+                      >0 participantes</span
+                    >
+                  </div>
+                  <!-- Users list -->
+                  <div class="row mt-3 ml-0 mb-0 mr-0">
+                    <a class="btn btn-sm border m-0 pl-4 pr-4">
+                      <i class="fas fa-user-plus text-gray"></i>
+                      Adicionar participantes
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card group-card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-3">
+                  <img
+                    class="group-image w-100 h-100"
+                    src="assets/images/groups/image-example.png"
+                  />
+                  <span class="badge img-badge bg-orange text-white"
+                    >ADMIN</span
+                  >
+                </div>
+                <!-- Body -->
+                <div class="col-md-9 p-3">
+                  <div class="row m-0 justify-content-between">
+                    <div class="">
+                      <h6 class="m-0 text-gray font-weight-bold">
+                        GoodPoker Help
+                      </h6>
+                    </div>
+                    <div class="btn-group dropleft">
+                      <button
+                        type="button"
+                        class="btn m-0 pt-0 pb-0 dropdown-toggle dropdown-group-menu no-focus"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <i class="fas fa-ellipsis-v text-green"></i>
+                      </button>
+                      <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton"
+                      >
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row m-0">
+                    <span class="text-light-gray small font-weight-bold"
+                      >3 de 5 membros</span
+                    >
+                  </div>
+                  <!-- Users list -->
+                  <div class="row mt-3 ml-0 mb-0 mr-0">
+                    <div class="col-2 m-0 p-0">
+                      <img
+                        class="img-icon-group rounded-circle"
+                        src="assets/images/groups/profile1.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-2 m-0 p-0">
+                      <img
+                        class="img-icon-group rounded-circle"
+                        src="assets/images/groups/profile2.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-2 m-0 p-0">
+                      <img
+                        class="img-icon-group rounded-circle"
+                        src="assets/images/groups/profile3.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-2 m-0 p-0">
+                      <a
+                        href="#"
+                        class="img-icon-group img-icon-group-empty rounded-circle d-flex align-items-center justify-content-center"
+                      >
+                        <i class="fas fa-user-plus text-gray"></i>
+                      </a>
+                    </div>
+                    <div class="col-2 m-0 p-0">
+                      <a
+                        href="#"
+                        class="img-icon-group img-icon-group-empty rounded-circle d-flex align-items-center justify-content-center"
+                      >
+                        <i class="fas fa-user-plus text-gray"></i>
+                      </a>
+                    </div>
+                    <div class="col-2 m-0 p-0"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card group-card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-3">
+                  <img
+                    class="group-image w-100 h-100"
+                    src="assets/images/groups/image-example.png"
+                  />
+                </div>
+                <!-- Body -->
+                <div class="col-md-9 p-3">
+                  <div class="row m-0 justify-content-between">
+                    <div class="">
+                      <h6 class="m-0 text-gray font-weight-bold">
+                        GoodPoker Help
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="row m-0">
+                    <span class="text-light-gray small font-weight-bold"
+                      >3 de 5 membros</span
+                    >
+                  </div>
+                  <!-- Users list -->
+                  <div class="row mt-3 ml-0 mb-0 mr-0">
+                    <div class="col-2 m-0 p-0">
+                      <img
+                        class="img-icon-group rounded-circle"
+                        src="assets/images/groups/profile1.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-2 m-0 p-0">
+                      <img
+                        class="img-icon-group rounded-circle"
+                        src="assets/images/groups/profile2.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-2 m-0 p-0">
+                      <img
+                        class="img-icon-group rounded-circle"
+                        src="assets/images/groups/profile3.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-2 m-0 p-0"></div>
+                    <div class="col-2 m-0 p-0"></div>
+                    <div class="col-2 m-0 p-0"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Row 3 -->
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card group-card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-3">
+                  <img
+                    class="group-image w-100 h-100"
+                    src="assets/images/groups/image-example.png"
+                  />
+                </div>
+                <!-- Body -->
+                <div class="col-md-9 p-3">
+                  <div class="row m-0 justify-content-between">
+                    <div class="">
+                      <h6 class="m-0 text-gray font-weight-bold">
+                        GoodPoker Help
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="row m-0">
+                    <span class="text-light-gray small font-weight-bold"
+                      >3 de 5 membros</span
+                    >
+                  </div>
+                  <!-- Users list -->
+                  <div class="row mt-3 ml-0 mb-0 mr-0">
+                    <div class="col-2 m-0 p-0">
+                      <img
+                        class="img-icon-group rounded-circle"
+                        src="assets/images/groups/profile1.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-2 m-0 p-0">
+                      <img
+                        class="img-icon-group rounded-circle"
+                        src="assets/images/groups/profile2.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-2 m-0 p-0">
+                      <img
+                        class="img-icon-group rounded-circle"
+                        src="assets/images/groups/profile3.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-2 m-0 p-0"></div>
+                    <div class="col-2 m-0 p-0"></div>
+                    <div class="col-2 m-0 p-0"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card group-card mb-3">
+              <div class="row no-gutters">
+                <div class="col-md-3">
+                  <img
+                    class="group-image w-100 h-100"
+                    src="assets/images/groups/image-example.png"
+                  />
+                </div>
+                <!-- Body -->
+                <div class="col-md-9 p-3">
+                  <div class="row m-0 justify-content-between">
+                    <div class="">
+                      <h6 class="m-0 text-gray font-weight-bold">
+                        GoodPoker Help
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="row m-0">
+                    <span class="text-light-gray small font-weight-bold"
+                      >3 de 5 membros</span
+                    >
+                  </div>
+                  <!-- Users list -->
+                  <div class="row mt-3 ml-0 mb-0 mr-0">
+                    <div class="col-2 m-0 p-0">
+                      <img
+                        class="img-icon-group rounded-circle"
+                        src="assets/images/groups/profile1.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-2 m-0 p-0">
+                      <img
+                        class="img-icon-group rounded-circle"
+                        src="assets/images/groups/profile2.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-2 m-0 p-0">
+                      <img
+                        class="img-icon-group rounded-circle"
+                        src="assets/images/groups/profile3.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-2 m-0 p-0"></div>
+                    <div class="col-2 m-0 p-0"></div>
+                    <div class="col-2 m-0 p-0"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Row X -->
+      </div>
+    </div>
+  </body>
+  <!-- Jquery -->
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <!-- PopperJS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <!-- Bootstrap -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"
+  ></script>
+</html>
