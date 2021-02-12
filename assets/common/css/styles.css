@@ -16,6 +16,7 @@ html {
 .group-card {
   box-shadow: 0px 0px 15px #0000001A;
   border-radius: 20px;
+  border: none;
 }
 
 .group-card img.group-image {
@@ -59,6 +60,16 @@ html {
 }
 
 /*  */
+
+
+.dropdown-menu {
+  border: none;
+  box-shadow: 0px 0px 15px #0000001a;
+}
+
+a.dropdown-item {
+  color: #6d7177;
+}
 
 .green-checkbox input[type="checkbox"] {
   width: auto;
