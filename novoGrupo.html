@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Remover</title>
+    <title>novoGrupo</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -148,8 +148,7 @@
                     </div>
                 </div>
             </div>
-            <!--row-->
-            <div class="row w-100 align-items-end pb-0 pl-4 ">
+            <div class="row w-100 align-items-start pb-0 pl-4">
                 <div class="col-md-8">
                     <a href="groups.html">
                         <button class="btn border-gray font-weight-bold text-gray m-0 ">
@@ -160,38 +159,62 @@
                 <div class="col-md-4">
                     <div class="row align-items-end">
                         <div class="col-lg-2 col-xs-4 pt-2 pl-2">
-                            <img src="assets/images/members/Help.png" class="rounded-circle img-icon-50" alt="image" />
+
                         </div>
                         <div class="col-lg-10 pt-2">
-                            <h6 class="text-gray font-weight-bold ml-2 mb-0 pb-0">GoodPoker Help</h6>
-                            <p class="text-gray font-weight-SemiBold ml-2 p-0 mb-0"> 5 de 5 membros</p>
+
                         </div>
                     </div>
                 </div>
             </div>
             <hr>
             <!--row-->
-            <div class="row pt-2 pl-2 mr-1 ml-1" style=" whidt: 100px;">
-                <div class="card card-container card-rounded" style="width: 53rem; height: 25rem;">
-                    <div class="card-body">
-                        <div class="pt-5 pb-1 text-center">
-                            <img src="assets/images/remove/check.png" alt="">
+            <div class="row mt-4 pl-1">
+                <h6 class="text-gray font-weight-bold ml-2 mb-0 pb-0">Preencha as informações do seu grupo
+                </h6>
+            </div>
+            <div class="container pt-2">
+                <div class="row">
+                    <div class="col-lg-4 pt-2">
+                        <div
+                            class="row pb-4 input-nameGroup text-gray rounded-pill w-100 border-gray p-1 border-witout-focus">
+                            <div class="col-10">
+                                <input type="text" />
+                            </div>
+                            <div class="col-2">
+                                <span>30</span>
+                            </div>
+
                         </div>
-                        <h4 class=" text-center text-green font-weight-normal ml-2 mb-0 pt-4">Membro removido com
-                            sucesso!</h4>
-                        <div class="pt-4 text-center">
-                            <a href="members.html">
-                                <button class="btn bg-orange font-weight-bold text-white  ">
-                                    REMOVER MAIS PARTICIPANTES
-                                </button>
-                            </a>
+                        <div class="row w-100">
+                            <div class="image-upload box-upload photo-newGroup">
+                                <label for="inputFile1">
+                                    <img id=img1 class="upload-image text-gray border-gray" alt="">
+                                </label>
+                                <input id="inputFile1" type="file" accept=".png, .jpg, .jpeg" class="input-newPhoto" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8  pt-2 ">
+                        <div class="form-group">
+                            <textarea class="form-control input-Description rounded-5 border-gray"
+                                id="exampleFormControlTextarea1" rows="14"
+                                placeholder="Descrição                                                                                                                       400"></textarea>
                         </div>
                     </div>
                 </div>
-                <!--row admin-->
-
             </div>
+            <div class="row ml-1 m-0">
+                <a href="remove.html">
+                    <button class="btn bg-light-green pl-5 pr-5 font-weight-bold text-white ">
+                        SALVAR
+                    </button>
+
+                </a>
+            </div>
+
         </div>
+    </div>
 </body>
 <!-- Jquery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -205,5 +228,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
     integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
     crossorigin="anonymous"></script>
+
 
 </html>

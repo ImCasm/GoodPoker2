@@ -11,6 +11,51 @@ html {
 }
 
 
+
+/*  */
+
+body > div.row {
+  height: 100vh !important;
+}
+
+.dropdown-menu {
+  min-width: auto;
+  overflow: hidden;
+}
+
+.dropdown-small a.dropdown-item{
+  font-size: 10px;
+  padding: 10px;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.dropdown-small .dropdown-menu {
+  position: relative;
+  top: 20px;
+  background-color: #f8f8f8;
+  border: none;
+  border-radius: 0px 0px 25px 25px;
+  box-shadow: 0px 0px 10px #0000001A;
+}
+
+.lang-icon-small {
+  width: 15px;
+  height: 15px;
+}
+
+.logo {
+  width: 160px;
+  display: block;
+  margin: auto;
+}
+
+.card-rounded{
+  border-radius: 25px;
+}
+
+/*  */
+
 /* Groups page */
 
 .group-card {
@@ -273,9 +318,8 @@ a.dropdown-item {
   opacity: 1;
 }
 
-.logo {
-  width: 220px;
-}
+
+
 
 .bg-yellow {
   background-color: #f5aa00;
@@ -496,12 +540,6 @@ p {
   color: white;
 }
 
-.logo {
-  width: 140px;
-  display: block;
-  margin: auto;
-}
-
 .scroll {
   overflow-x: scroll;
   overflow-y: hidden;
@@ -509,6 +547,7 @@ p {
 
 .card {
   box-shadow: 5px 5px 15px #0000001a;
+  
 }
 
 .br-15 {
@@ -730,8 +769,6 @@ p {
   font-size: 16px;
 }
 
-/* separacion de los 
-*/
 
 .form-check-inline {
   display: -ms-inline-flexbox;
@@ -994,6 +1031,65 @@ p {
   margin: 5px;
 }
 
+
+/* New group*/
+.input-nameGroup{
+  background-color: transparent;
+}
+
+
+.input-newPhoto{
+  border-radius: 20px;
+  height: 290px;
+  background-color: transparent;
+  width: 10px ;
+}
+
+.input-Description{
+  border-radius: 20px;
+  height: 340px;
+  background-color: transparent;
+
+}
+
+.photo-newGroup::after {
+  content: "Upload Imagem";
+  color: gray;
+  position: absolute;
+  left: 25%;
+  top: 47%;
+  width: 50%;
+  font-size: 15px;
+}
+
+.photo-newGroup label {
+  cursor: pointer;
+}
+
+.photo-newGroup label::after {
+  position: absolute;
+  content: "\f030";
+  font-size: 25px;
+  left: 42%;
+  color: gray;
+  top: 35%;
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Free';
+  cursor: pointer;
+}
+
+.photo-newGroup label:hover::after {
+  color: #56915d;
+}
+
+.upload-image{
+  width: 270px;
+  height: 290px;
+  border-radius: 25px;
+ 
+}
+
+
 @media (min-width: 992px) {
   .pl-2em {
     padding-left: 3em;
@@ -1011,3 +1107,10 @@ p {
     bottom: auto !important;
   }
 }
+
+@media (max-width: 768px) {
+  .card-container {
+    height: 35rem !important;
+  }
+}
+
