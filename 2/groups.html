@@ -22,81 +22,136 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/common/css/styles.css" />
+  <link rel="stylesheet" href="../assets/common/css/styles.css" />
 </head>
 
 <body class="bg-light-gray">
   <div class="row m-0">
     <!-- Column 1 -->
-    <div class="col-md-3 min-vh-100 bg-dark-green p-5">
-      <div class="text-center mb-5">
-        <img class="logo" src="assets/images/logo.png" alt="logo" />
-      </div>
-      <div class="main-menu p-0 m-0">
-        <div class="row w-100 align-items-start menu-item">
-          <div class="col-2 col-md-3 col-lg-2 m-0 p-0">
-            <i class="fas fa-users"></i>
-          </div>
-          <div class="col-10 col-md-9 col-lg-10 p-0">
-            <a class="" href=""> Comunidade GoodPoker</a>
-          </div>
-        </div>
+    <div class="menu-container col-xl-3 col-lg-3 col-md-3 bg-dark-green p-5">
 
-        <div class="row w-100 align-items-start menu-item">
-          <div class="col-2 col-md-3 col-lg-2 m-0 p-0">
-            <i class="fas fa-address-card"></i>
+      <nav class="navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="text-center mb-5">
+            <img class="logo" src="../assets/images/logo.png" alt="logo" />
           </div>
-          <div class="col-10 col-md-9 col-lg-10 p-0">
-            <a class="m-0" data-toggle="collapse" href="#menuCollapse" role="button" aria-expanded="false"
-              aria-controls="menuCollapse">
-              Sala de Estudos
-              <i class="fas fa-caret-down ml-2 text-white"></i>
-            </a>
-          </div>
-        </div>
 
-        <div class="collapse" id="menuCollapse">
-          <div class="">
-            <a class="menu-subitem" href="">Preparar</a>
-            <a class="menu-subitem" href="">Liberar</a>
-            <a class="menu-subitem" href="">Estudos</a>
-            <a class="menu-subitem" href="">Biblioteca</a>
-          </div>
-        </div>
+          <div class="main-menu">
+            <div class="row w-100 align-items-start menu-item">
+              <div class="col-2 col-md-3 col-lg-2 m-0 p-0">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="col-10 col-md-9 col-lg-10 p-0">
+                <a class="" href="#">
+                  <span id="popover1" data-toggle="popover" data-html="true" data-content="
+              <div class='p-2'>
+                <h6 class='text-green text-center'>Aprenda <b>com a comunidade!</b></h6>
+                <span class='small'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut libero et risus mollis congue. Sed ac augue at leo laoreet .</span>
+                <div class='row d-flex justify-content-around'>
+                  <a id='btn-close-tour' class='border-gray col-5 btn btn-sm'> <span class='small'>PULAR TOUR</span> </a>
+                  
+                  <a id='btnToPop2' class='-5 btn btn-sm bg-light-green'><span class='small text-white'>PRÓXIMO</span></a>
+                </div>
+              </div>">Comunidade GoodPoker</span></a>
+              </div>
+            </div>
 
-        <div class="row w-100 align-items-start menu-item">
-          <div class="col-2 col-md-3 col-lg-2 m-0 p-0">
-            <i class="fas fa-user-friends"></i>
-          </div>
-          <div class="col-10 col-md-9 col-lg-10 p-0">
-            <a class="" href=""> Meus Grupos</a>
-          </div>
-        </div>
+            <div class="row w-100 align-items-start menu-item">
+              <div class="col-2 col-md-3 col-lg-2 m-0 p-0">
+                <i class="fas fa-address-card"></i>
+              </div>
+              <div class="col-10 col-md-9 col-lg-10 p-0">
+                <a class="" data-toggle="collapse" href="#menuCollapse" role="button" aria-expanded="false"
+                  aria-controls="menuCollapse">
+                  <span id="popover4" data-toggle="popover" data-html="true" data-content="
+                    <div class='p-2'>
+                      <h6 class='text-green text-center'><b>Estude e melhore</b> seu jogo!</h6>
+                      <span class='small'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut libero et risus mollis congue. Sed ac augue at leo laoreet .</span>
+                      <div class='row d-flex justify-content-around'>
+                        <a id='btnToPop5' class='-5 btn btn-sm bg-light-green'><span class='small text-white'>PRÓXIMO</span></a>
+                      </div>
+                    </div>">Sala de Estudos</span>
+                  <i class="fas fa-caret-down ml-2 text-white"></i>
+                </a>
+              </div>
+            </div>
 
-        <div class="row w-100 align-items-start menu-item">
-          <div class="col-2 col-md-3 col-lg-2 m-0 p-0">
-            <i class="fas fa-file-upload"></i>
-          </div>
-          <div class="col-10 col-md-9 col-lg-10 p-0">
-            <a class="" href=""> Importação</a>
-          </div>
-        </div>
+            <div class="collapse" id="menuCollapse">
+              <div class="">
+                <a class="menu-subitem" href="">Preparar</a>
+                <a class="menu-subitem" href="">Liberar</a>
+                <a class="menu-subitem" href="">Estudos</a>
+                <a class="menu-subitem" href="">Biblioteca</a>
+              </div>
+            </div>
 
-        <div class="row w-100 align-items-start menu-item">
-          <div class="col-2 col-md-3 col-lg-2 m-0 p-0">
-            <i class="fas fa-chart-line"></i>
-          </div>
-          <div class="col-10 col-md-9 col-lg-10 p-0">
-            <a class="" href=""> BankRoll</a>
-          </div>
-        </div>
+            <div class="row w-100 align-items-start menu-item">
+              <div class="col-2 col-md-3 col-lg-2 m-0 p-0">
+                <i class="fas fa-user-friends"></i>
+              </div>
+              <div class="col-10 col-md-9 col-lg-10 p-0">
+                <a class="" href="">
+                  <span id="popover5" data-toggle="popover" data-html="true" data-content="
+                    <div class='p-2'>
+                      <h6 class='text-green text-center'><b>Crie e participe</b> de grupos de estudos</h6>
+                      <span class='small'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut libero et risus mollis congue. Sed ac augue at leo laoreet .</span>
+                      <div class='row d-flex justify-content-around'>
+                        <a id='btnToPop6' class='-5 btn btn-sm bg-light-green'><span class='small text-white'>PRÓXIMO</span></a>
+                      </div>
+                    </div>">Meus Grupos</span>
+                </a>
+              </div>
+            </div>
 
-        <div class="text-center mt-5">
-          <button class="btn bg-yellow text-white font-weight-bold w-100">
-            <i class="fas fa-star text-white"></i> Updgrade de Plano
-          </button>
+            <div class="row w-100 align-items-start menu-item">
+              <div class="col-2 col-md-3 col-lg-2 m-0 p-0">
+                <i class="fas fa-file-upload"></i>
+              </div>
+              <div class="col-10 col-md-9 col-lg-10 p-0">
+                <a class="" href="">
+                  <span id="popover2" data-toggle="popover" data-html="true" data-content="
+                      <div class='p-2'>
+                        <h6 class='text-green text-center'>Importe <b>seus dados</b></h6>
+                        <span class='small'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut libero et risus mollis congue. Sed ac augue at leo laoreet .</span>
+                        <div class='row d-flex justify-content-around'>
+                          <a id='btnToPop3' class='-5 btn btn-sm bg-light-green'><span class='small text-white'>PRÓXIMO</span></a>
+                        </div>
+                      </div>">Importação</span></a>
+              </div>
+            </div>
+
+            <div class="row w-100 align-items-start menu-item">
+              <div class="col-2 col-md-3 col-lg-2 m-0 p-0">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="col-10 col-md-9 col-lg-10 p-0">
+                <a class="" href="">
+                  <span id="popover3" data-toggle="popover" data-html="true" data-content="
+                      <div class='p-2'>
+                        <h6 class='text-green text-center'>Acompanhe <b>seu desempenho</b></h6>
+                        <span class='small'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut libero et risus mollis congue. Sed ac augue at leo laoreet .</span>
+                        <div class='row d-flex justify-content-around'>
+                          <a id='btnToPop4' id='btnToPop4' class='-5 btn btn-sm bg-light-green'><span class='small text-white'>PRÓXIMO</span></a>
+                        </div>
+                      </div>">
+                    BankRoll
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="text-center mt-5">
+              <button class="btn bg-yellow text-white font-weight-bold w-100">
+                <i class="fas fa-star text-white"></i> Updgrade de Plano
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
+      </nav>
     </div>
 
     <!-- Column 2 -->
@@ -106,7 +161,7 @@
         <div class="col-xl-2 col-lg-3 dropdown dropdown-small mb-2 offset-xl-8 offset-lg-6">
           <a class="btn mt-0 br-15 bg-gray dropdown-toggle text-white" href="#" role="button" id="dropdownMenuLink"
             data-toggle="dropdown" aria-haspopup="true" x aria-expanded="false">
-            <img src="assets/images/members/marcos.png" class="rounded-circle lang-icon" alt="image" />
+            <img src="../assets/images/members/marcos.png" class="rounded-circle lang-icon" alt="image" />
 
             <span class="small">Marcos</span>
           </a>
@@ -127,47 +182,50 @@
         <div class="col-xl-2 col-lg-3 dropdown dropdown-small">
           <a class="btn mt-0 p-2 pr-0 br-15 bg-lang-icon dropdown-toggle text-gray" href="#" role="button"
             id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" x aria-expanded="false">
-            <img src="assets/images/languages/portuguese.png" class="rounded-circle lang-icon" alt="image" />
+            <img src="../assets/images/languages/portuguese.png" class="rounded-circle lang-icon" alt="image" />
 
             <span class="small">PT-BR</span>
           </a>
 
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
             <a class="dropdown-item img-circle small" href="#">
-              <img src="assets/images/languages/portuguese.png" class="img-circle lang-icon" alt="" />
+              <img src="../assets/images/languages/portuguese.png" class="img-circle lang-icon" alt="" />
               PORTUGUÉS</a>
             <a class="dropdown-item small" href="#">
-              <img src="assets/images/languages/english.png" class="img-circle lang-icon" alt="" />
+              <img src="../assets/images/languages/english.png" class="img-circle lang-icon" alt="" />
               INGLÉS</a>
             <a class="dropdown-item small" href="#">
-              <img src="assets/images/languages/spanish.png" class="img-circle lang-icon" alt="" />
+              <img src="../assets/images/languages/spanish.png" class="img-circle lang-icon" alt="" />
               ESPANHOL
             </a>
           </div>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row d-flex align-items-center">
         <div class="col-md-5 col-lg-5 col-xl-7 mt-4">
           <h3 class="font-rajdhani profile1 m-0">Meus Grupos</h3>
         </div>
 
-        <div class="col-md-3 col-lg-3 col-xl-2 dropdown text-right">
-          <button class="btn bg-light-gray dropdown-toggle border-green text-green" type="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="true">
-            <span class="pl-3 pr-4 font-weight-bold">Todos</span>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </div>
+        <div class="col-md-7 col-lg-7 col-xl-5">
+          <div class="row d-flex justify-content-end">
+            <div class="col-6 col-sm-6 col-md-5 col-lg-4 col-xl-4 dropdown">
+              <button class="btn btn-small-12px bg-light-gray dropdown-toggle border-green text-green pl-0"
+                type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span class="pl-3 pr-4 font-weight-bold">Todos</span>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <!-- Content -->
+              </div>
+            </div>
 
-        <div class="col-md-4 col-lg-4 col-xl-3 text-right">
-          <a href="#" class="btn bg-light-green border-green text-white" type="button" data-toggle="dropdown">
-            <span class="pl-3 pr-3 font-weight-bold font-size-14">NOVO GRUPO</span>
-          </a>
+            <div class="col-6 col-sm-6 col-md-7 col-lg-6 col-xl-6">
+              <a href="#" class="btn btn-small-12px bg-light-green border-green text-white" type="button"
+                data-toggle="dropdown">
+                <span class="pl-3 pr-3 font-weight-bold">NOVO GRUPO</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -177,15 +235,15 @@
 
       <!-- Row 1 -->
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-12 col-xl-6">
           <div class="card group-card mb-3">
             <div class="row no-gutters">
-              <div class="col-md-3">
-                <img class="group-image w-100 h-100" src="assets/images/groups/image-example.png" />
+              <div class="col-md-4">
+                <img class="group-image w-100 h-100" src="../assets/images/groups/image-example.png" />
                 <span class="badge img-badge bg-orange text-white">ADMIN</span>
               </div>
               <!-- Body -->
-              <div class="col-md-9 p-3">
+              <div class="col-md-8 p-3">
                 <div class="row m-0 justify-content-between">
                   <div class="">
                     <h6 class="m-0 text-gray font-weight-bold">
@@ -197,8 +255,8 @@
                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-ellipsis-v text-green"></i>
                     </button>
-                    <div class="group-card-menu dropdown-menu bg-light-gray p-3 text-green" style="border-radius: 25px"
-                      aria-labelledby="dropdownMenuButton">
+                    <div class="groups-options group-card-menu dropdown-menu bg-light-gray text-green"
+                      style="border-radius: 25px" aria-labelledby="dropdownMenuButton">
                       <a class="dropdown-item mb-2" href="#">
                         <i class="fas fa-user-plus"></i>
                         Adicionar Participante
@@ -224,13 +282,13 @@
                 <!-- Users list -->
                 <div class="row mt-3 ml-0 mb-0 mr-0">
                   <div class="col-2 m-0 p-0">
-                    <img class="img-icon-group rounded-circle" src="assets/images/groups/profile1.png" alt="" />
+                    <img class="img-icon-group rounded-circle" src="../assets/images/groups/profile1.png" alt="" />
                   </div>
                   <div class="col-2 m-0 p-0">
-                    <img class="img-icon-group rounded-circle" src="assets/images/groups/profile2.png" alt="" />
+                    <img class="img-icon-group rounded-circle" src="../assets/images/groups/profile2.png" alt="" />
                   </div>
                   <div class="col-2 m-0 p-0">
-                    <img class="img-icon-group rounded-circle" src="assets/images/groups/profile3.png" alt="" />
+                    <img class="img-icon-group rounded-circle" src="../assets/images/groups/profile3.png" alt="" />
                   </div>
                   <div class="col-2 m-0 p-0">
                     <a href="#"
@@ -250,15 +308,15 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-12 col-xl-6">
           <div class="card group-card mb-3">
             <div class="row no-gutters">
-              <div class="col-md-3">
-                <img class="group-image w-100 h-100" src="assets/images/groups/image-example.png" />
+              <div class="col-md-4">
+                <img class="group-image w-100 h-100" src="../assets/images/groups/image-example.png" />
                 <span class="badge img-badge bg-orange text-white">ADMIN</span>
               </div>
               <!-- Body -->
-              <div class="col-md-9 p-3">
+              <div class="col-md-8 p-3">
                 <div class="row m-0 justify-content-between">
                   <div class="">
                     <h6 class="m-0 text-gray font-weight-bold">
@@ -270,7 +328,7 @@
                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-ellipsis-v text-green"></i>
                     </button>
-                    <div class="group-card-menu dropdown-menu bg-light-gray p-3 text-green" style="border-radius: 25px"
+                    <div class="groups-options group-card-menu dropdown-menu bg-light-gray p-3 text-green" style="border-radius: 25px"
                       aria-labelledby="dropdownMenuButton">
                       <a class="dropdown-item mb-2" href="#">
                         <i class="fas fa-user-plus"></i>
@@ -296,7 +354,7 @@
                 </div>
                 <!-- Users list -->
                 <div class="row mt-3 ml-0 mb-0 mr-0">
-                  <a class="btn btn-sm border m-0 pl-4 pr-4 text-gray">
+                  <a class="btn btn-small-12px border m-0 pl-4 pr-4 pt-2 pb-2 text-gray">
                     <i class="fas fa-user-plus text-gray"></i>
                     Adicionar participantes
                   </a>
@@ -310,15 +368,15 @@
       <!-- Row 2 -->
 
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-12 col-xl-6">
           <div class="card group-card mb-3">
             <div class="row no-gutters">
-              <div class="col-md-3">
-                <img class="group-image w-100 h-100" src="assets/images/groups/image-example.png" />
+              <div class="col-md-4">
+                <img class="group-image w-100 h-100" src="../assets/images/groups/image-example.png" />
                 <span class="badge img-badge bg-orange text-white">ADMIN</span>
               </div>
               <!-- Body -->
-              <div class="col-md-9 p-3">
+              <div class="col-md-8 p-3">
                 <div class="row m-0 justify-content-between">
                   <div class="">
                     <h6 class="m-0 text-gray font-weight-bold">
@@ -330,7 +388,7 @@
                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-ellipsis-v text-green"></i>
                     </button>
-                    <div class="group-card-menu dropdown-menu bg-light-gray p-3 text-green" style="border-radius: 25px"
+                    <div class="groups-options group-card-menu dropdown-menu bg-light-gray p-3 text-green" style="border-radius: 25px"
                       aria-labelledby="dropdownMenuButton">
                       <a class="dropdown-item mb-2" href="#">
                         <i class="fas fa-user-plus"></i>
@@ -357,13 +415,13 @@
                 <!-- Users list -->
                 <div class="row mt-3 ml-0 mb-0 mr-0">
                   <div class="col-2 m-0 p-0">
-                    <img class="img-icon-group rounded-circle" src="assets/images/groups/profile1.png" alt="" />
+                    <img class="img-icon-group rounded-circle" src="../assets/images/groups/profile1.png" alt="" />
                   </div>
                   <div class="col-2 m-0 p-0">
-                    <img class="img-icon-group rounded-circle" src="assets/images/groups/profile2.png" alt="" />
+                    <img class="img-icon-group rounded-circle" src="../assets/images/groups/profile2.png" alt="" />
                   </div>
                   <div class="col-2 m-0 p-0">
-                    <img class="img-icon-group rounded-circle" src="assets/images/groups/profile3.png" alt="" />
+                    <img class="img-icon-group rounded-circle" src="../assets/images/groups/profile3.png" alt="" />
                   </div>
                   <div class="col-2 m-0 p-0">
                     <a href="#"
@@ -383,14 +441,14 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-12 col-xl-6">
           <div class="card group-card mb-3">
             <div class="row no-gutters">
-              <div class="col-md-3">
-                <img class="group-image w-100 h-100" src="assets/images/groups/image-example.png" />
+              <div class="col-md-4">
+                <img class="group-image w-100 h-100" src="../assets/images/groups/image-example.png" />
               </div>
               <!-- Body -->
-              <div class="col-md-9 p-3">
+              <div class="col-md-8 p-3">
                 <div class="row m-0 justify-content-between">
                   <div class="">
                     <h6 class="m-0 text-gray font-weight-bold">
@@ -404,13 +462,13 @@
                 <!-- Users list -->
                 <div class="row mt-3 ml-0 mb-0 mr-0">
                   <div class="col-2 m-0 p-0">
-                    <img class="img-icon-group rounded-circle" src="assets/images/groups/profile1.png" alt="" />
+                    <img class="img-icon-group rounded-circle" src="../assets/images/groups/profile1.png" alt="" />
                   </div>
                   <div class="col-2 m-0 p-0">
-                    <img class="img-icon-group rounded-circle" src="assets/images/groups/profile2.png" alt="" />
+                    <img class="img-icon-group rounded-circle" src="../assets/images/groups/profile2.png" alt="" />
                   </div>
                   <div class="col-2 m-0 p-0">
-                    <img class="img-icon-group rounded-circle" src="assets/images/groups/profile3.png" alt="" />
+                    <img class="img-icon-group rounded-circle" src="../assets/images/groups/profile3.png" alt="" />
                   </div>
                   <div class="col-2 m-0 p-0"></div>
                   <div class="col-2 m-0 p-0"></div>
@@ -424,14 +482,14 @@
       <!-- Row 3 -->
 
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-12 col-xl-6">
           <div class="card group-card mb-3">
             <div class="row no-gutters">
-              <div class="col-md-3">
-                <img class="group-image w-100 h-100" src="assets/images/groups/image-example.png" />
+              <div class="col-md-4">
+                <img class="group-image w-100 h-100" src="../assets/images/groups/image-example.png" />
               </div>
               <!-- Body -->
-              <div class="col-md-9 p-3">
+              <div class="col-md-8 p-3">
                 <div class="row m-0 justify-content-between">
                   <div class="">
                     <h6 class="m-0 text-gray font-weight-bold">
@@ -445,13 +503,13 @@
                 <!-- Users list -->
                 <div class="row mt-3 ml-0 mb-0 mr-0">
                   <div class="col-2 m-0 p-0">
-                    <img class="img-icon-group rounded-circle" src="assets/images/groups/profile1.png" alt="" />
+                    <img class="img-icon-group rounded-circle" src="../assets/images/groups/profile1.png" alt="" />
                   </div>
                   <div class="col-2 m-0 p-0">
-                    <img class="img-icon-group rounded-circle" src="assets/images/groups/profile2.png" alt="" />
+                    <img class="img-icon-group rounded-circle" src="../assets/images/groups/profile2.png" alt="" />
                   </div>
                   <div class="col-2 m-0 p-0">
-                    <img class="img-icon-group rounded-circle" src="assets/images/groups/profile3.png" alt="" />
+                    <img class="img-icon-group rounded-circle" src="../assets/images/groups/profile3.png" alt="" />
                   </div>
                   <div class="col-2 m-0 p-0"></div>
                   <div class="col-2 m-0 p-0"></div>
@@ -461,14 +519,14 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-12 col-xl-6">
           <div class="card group-card mb-3">
             <div class="row no-gutters">
-              <div class="col-md-3">
-                <img class="group-image w-100 h-100" src="assets/images/groups/image-example.png" />
+              <div class="col-md-4">
+                <img class="group-image w-100 h-100" src="../assets/images/groups/image-example.png" />
               </div>
               <!-- Body -->
-              <div class="col-md-9 p-3">
+              <div class="col-md-8 p-3">
                 <div class="row m-0 justify-content-between">
                   <div class="">
                     <h6 class="m-0 text-gray font-weight-bold">
@@ -482,13 +540,13 @@
                 <!-- Users list -->
                 <div class="row mt-3 ml-0 mb-0 mr-0">
                   <div class="col-2 m-0 p-0">
-                    <img class="img-icon-group rounded-circle" src="assets/images/groups/profile1.png" alt="" />
+                    <img class="img-icon-group rounded-circle" src="../assets/images/groups/profile1.png" alt="" />
                   </div>
                   <div class="col-2 m-0 p-0">
-                    <img class="img-icon-group rounded-circle" src="assets/images/groups/profile2.png" alt="" />
+                    <img class="img-icon-group rounded-circle" src="../assets/images/groups/profile2.png" alt="" />
                   </div>
                   <div class="col-2 m-0 p-0">
-                    <img class="img-icon-group rounded-circle" src="assets/images/groups/profile3.png" alt="" />
+                    <img class="img-icon-group rounded-circle" src="../assets/images/groups/profile3.png" alt="" />
                   </div>
                   <div class="col-2 m-0 p-0"></div>
                   <div class="col-2 m-0 p-0"></div>

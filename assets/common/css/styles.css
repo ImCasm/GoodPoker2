@@ -6,10 +6,77 @@ body {
   font-weight: normal;
 }
 
+html, body {
+  height: 100%;
+}
+
 html {
   overflow-y: scroll;
 }
 
+.groups-options {
+  padding: 0.5rem;
+}
+
+.groups-options a{
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px #2a3a2d inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.carousel-item {
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, .1) 1%, rgba(0, 0, 0, .1) 2%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .5) 100%) repeat scroll 0 0;
+}
+
+.carousel-item img, .carousel-item iframe {
+  position:relative;
+  z-index:-1;
+}
+
+input {
+  font-size: 12px;
+}
+
+.btn-password-generate {
+  position: absolute;
+  font-size: 12px !important;
+  right: 10px;
+  line-height: 30px;
+}
+
+.btn-password-generate:hover {
+  color: #56915d;
+}
+
+.cursor-pointer:hover {
+  cursor: pointer;
+}
+
+/*  */
+
+/* Carousel Login and Register */
+
+.carousel-indicators li {
+  margin-right: 20px !important;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+}
 
 
 /*  */
@@ -62,6 +129,7 @@ body > div.row {
   box-shadow: 0px 0px 15px #0000001A;
   border-radius: 20px;
   border: none;
+  min-height: 120px !important;
 }
 
 .group-card img.group-image {
@@ -152,6 +220,10 @@ a.dropdown-item {
   color: #6d7177;
 }
 
+a#dropdownMenuLink:hover {
+  color: #56915d;
+}
+
 .green-checkbox input[type="checkbox"] {
   width: auto;
   opacity: 0.00000001;
@@ -166,10 +238,10 @@ a.dropdown-item {
   content: "";
   position: absolute;
   left: 0;
-  top: 0;
+  top: 5px;
   margin: 4px;
-  width: 22px;
-  height: 22px;
+  width: 15px;
+  height: 15px;
   transition: transform 0.28s ease;
   border-radius: 3px;
   border: 2px solid #7bbe72;
@@ -187,7 +259,7 @@ a.dropdown-item {
   will-change: transform;
   position: absolute;
   top: 12px;
-  left: 10px;
+  left: 7px;
 }
 .green-checkbox input[type="checkbox"]:checked ~ label::before {
   color: #7bbe72;
@@ -201,7 +273,7 @@ a.dropdown-item {
 .green-checkbox label {
   min-height: 34px;
   display: block;
-  padding-left: 40px;
+  padding-left: 26px;
   margin-bottom: 0;
   font-weight: normal;
   cursor: pointer;
@@ -279,6 +351,10 @@ a.dropdown-item {
 
 .font-size-14 {
   font-size: 14px;
+}
+
+.font-size-12 {
+  font-size: 12px;
 }
 
 .link:hover {
@@ -405,6 +481,7 @@ a.dropdown-item {
   position: absolute;
   padding: 10px;
   pointer-events: none;
+  top: -3px;
 }
 
 /* align icon */
@@ -418,7 +495,7 @@ a.dropdown-item {
 
 /* add padding  */
 .left-addon input {
-  padding-left: 30px;
+  padding-left: 33px;
 }
 .right-addon input {
   padding-right: 30px;
@@ -452,6 +529,18 @@ a.dropdown-item {
 }
 
 .login__container {
+  width: 65%;
+  max-width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login__container .btn {
+  font-size: 0.7rem;
+}
+
+select.btn.profile1-btn-janeiro {
+  font-size: 0.7rem;
 }
 
 .login__container--form {
@@ -487,10 +576,10 @@ a.dropdown-item {
   border-left: 0px;
   border-top: 0px;
   border-right: 0px;
-  font-size: 16px;
+  font-size: 12px;
   font-family: "Montserrat";
   margin-top: 20px;
-  padding: 18px 0px;
+  padding: 15px 0px;
   outline: none;
   height: 15px;
   width: auto;
@@ -531,6 +620,10 @@ a.dropdown-item {
 p {
   color: #c3c3c3;
   font-weight: bold;
+  font-size: 9px;
+}
+
+.comment p {
   font-size: 12px;
 }
 
@@ -542,6 +635,10 @@ p {
 .btn {
   border-radius: 25px;
   margin-top: 20px;
+}
+
+.btn-small-12px {
+  font-size: 12px;
 }
 
 .btn-criar {
@@ -563,7 +660,7 @@ p {
   border: none;
   color: #fff;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .btn-login {
@@ -571,15 +668,16 @@ p {
   border: none;
   color: #c3c3c3;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .btn-facebook {
   background-color: #476bb0;
   border: none;
   color: #fff;
+  font-weight: bold;
   font-family: "Montserrat";
-  margin-top: 20px;
+  margin-top: 5px;
 }
 .hr {
   color: white;
@@ -610,7 +708,7 @@ p {
 .parag {
   text-align: left;
   color: #c3c3c3;
-  font-size: 9px;
+  font-size: 8px;
   font-weight: normal;
   padding: 0px 10px;
   margin-bottom: 0;
@@ -618,6 +716,8 @@ p {
 
 .criar {
   color: white;
+  font-size: 1rem;
+  margin-bottom: 15px;
 }
 
 .check {
@@ -732,6 +832,7 @@ p {
   padding-bottom: 30px;
   padding-left: 15px;
 }
+
 .progressbar {
   counter-reset: step;
 }
@@ -810,8 +911,17 @@ p {
 .label-styles {
   color: #707070;
   font-family: "Montserrat";
-  font-weight: medium;
-  font-size: 16px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.label-styles h5 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.form-check-input .form-check-label{
+  font-size: 2rem !important;
 }
 
 
@@ -874,10 +984,10 @@ p {
 }
 
 .profile2-btn-premium {
-  background-color: white;
+  background-color: transparent;
   border-color: #697069;
   color: #697069;
-  font-size: 16px;
+  font-size: 12px;
   width: 160px;
   height: 35px;
   padding: 0px;
@@ -981,11 +1091,12 @@ p {
 
 
 .input-profile1 {
-  background: white;
+  background: transparent;
   border-radius: 25px;
   border-color: #6d7177;
-  color: #6d7177;
+  color: #6D7177;
   font-size: 14px;
+  font-weight: bold;
   height: 35px;
   width: 100%;
   outline: none;
@@ -1022,7 +1133,7 @@ p {
   font: "Montserrat";
 }
 .profile1-btn-janeiro {
-  background-color: white;
+  background-color: transparent;
   border-color: #6d7177;
   color: #6d7177;
   font-size: 18 px;
@@ -1061,7 +1172,8 @@ p {
   background-color: #56915d;
   color: white;
   font-size: 12px;
-  width: 100px;
+  padding-left: 25px;
+  padding-right: 25px ;
   height: 35px;
   font-weight: bold;
   font: "Montserrat";
@@ -1080,8 +1192,19 @@ p {
 /* New group*/
 .input-nameGroup{
   background-color: transparent;
+  margin-left: 0;
+  margin-bottom: 1rem;
 }
 
+.no-focus:focus{
+  outline: none;
+}
+
+.input-nameGroup input{
+  background-color: transparent;
+  border: none;
+  color: #6D7177;
+}
 
 .input-newPhoto{
   border-radius: 20px;
@@ -1101,10 +1224,11 @@ p {
   content: "Upload Imagem";
   color: gray;
   position: absolute;
-  left: 25%;
+  left: 42%;
   top: 47%;
-  width: 50%;
+  width: 20%;
   font-size: 15px;
+  font-weight: 600;
 }
 
 .photo-newGroup label {
@@ -1115,7 +1239,7 @@ p {
   position: absolute;
   content: "\f030";
   font-size: 25px;
-  left: 42%;
+  left: 47%;
   color: gray;
   top: 35%;
   font-weight: 900;
@@ -1128,10 +1252,10 @@ p {
 }
 
 .upload-image{
-  width: 270px;
-  height: 290px;
+  width: 100vw;
+  max-width: 100%;
+  height: 300px;
   border-radius: 25px;
- 
 }
 
 
@@ -1143,6 +1267,10 @@ p {
   .ml-2em {
     margin-left: 2em;
   }
+
+  .navbar-expand-lg .navbar-collapse {
+    display: block !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1151,11 +1279,18 @@ p {
     font-size: 7px;
     bottom: auto !important;
   }
-}
 
-@media (max-width: 768px) {
+  .menu-container {
+    padding: 1rem 2rem !important;
+  }
+
+  .add-participants-bar {
+    border-radius: 15px !important;
+  }
+
+
   .card-container {
     height: 35rem !important;
   }
-}
 
+}
