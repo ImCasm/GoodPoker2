@@ -14,6 +14,31 @@ html {
   overflow-y: scroll;
 }
 
+.add-participants-bar::after {
+  content: '\f002';
+  position: relative;
+  font-size: 16px !important;
+  left: -15px;
+  color: #999999;
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Free';
+}
+
+.participant-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-transparent {
+  background-color: transparent;
+  border: none;
+}
+
+.input-transparent:focus {
+  outline: none;
+}
+
 .groups-options {
   padding: 0.5rem;
 }
@@ -1203,7 +1228,7 @@ p {
 .input-nameGroup input{
   background-color: transparent;
   border: none;
-  color: #6D7177;
+  color: #8e959e;
 }
 
 .input-newPhoto{
@@ -1213,11 +1238,23 @@ p {
   width: 10px ;
 }
 
-.input-Description{
-  border-radius: 20px;
-  height: 340px;
+.input-group-description {
+  padding-top: 7px !important;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
   background-color: transparent;
+  resize: none;
+  outline: none;
+  font-size: 12px;
+}
 
+.group-description-container {
+  border-radius: 15px;
+  min-height: 300px;
+  margin: 0;
 }
 
 .photo-newGroup::after {
@@ -1284,7 +1321,7 @@ p {
     padding: 1rem 2rem !important;
   }
 
-  .add-participants-bar {
+  .add-participants-bar, .participant-item {
     border-radius: 15px !important;
   }
 

@@ -148,7 +148,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row w-100 align-items-start pb-0 pl-4">
+            <div class="row w-100 align-items-start mt-4 pb-0 pl-4">
                 <div class="col-md-8">
                     <a href="groups.html">
                         <button class="btn btn-small-12px border-gray font-weight-bold text-gray m-0 ">
@@ -183,14 +183,16 @@
                                 <input class="no-focus w-100" type="text" placeholder="Nome do Grupo" />
                             </div>
                             <div class="col-2">
-                                <span>30</span>
+                                <span class="small">30</span>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-12 w-100">
                                 <div class="image-upload box-upload photo-newGroup">
-                                    <label for="inputFile1">
-                                        <img id=img1 class="upload-image text-gray" alt="">
+                                    <label class="m-0" for="inputFile1">
+                                        <!-- Do not leave the SRC attribute empty, (it damages the layout) -->
+                                        <img src="../assets/images/utils/blank.gif " id=img1
+                                            class="upload-image text-gray border-gray" alt="">
                                     </label>
                                     <input id="inputFile1" type="file" accept=".png, .jpg, .jpeg"
                                         class="input-newPhoto" />
@@ -199,16 +201,22 @@
                         </div>
                     </div>
                     <div class="col-lg-7 pt-2">
-                        <div class="form-group">
-                            <textarea class="form-control input-Description rounded-5 border-gray"
-                                id="exampleFormControlTextarea1" rows="14" placeholder="Descrição 400"></textarea>
+                        <div class="row group-description-container h-100 w-100 border-gray text-gray">
+                            <div class="col-10">
+                                <textarea class="input-group-description h-100 text-gray"
+                                        id="exampleFormControlTextarea1"
+                                        placeholder="Descrição"></textarea>
+                            </div>
+                            <div class="col-2">
+                                <span class="small">400</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row ml-1 m-0">
                 <a href="remove.html">
-                    <button class="btn bg-light-green pl-5 pr-5 font-weight-bold text-white ">
+                    <button class="btn btn-small-12px bg-light-green pl-5 pr-5 pt-2 pb-2 font-weight-bold text-white">
                         SALVAR
                     </button>
 
