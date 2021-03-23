@@ -14,19 +14,32 @@ html {
   overflow-y: scroll;
 }
 
+.invitation-card {
+  z-index: 10;
+  max-height: 250px;
+}
+
+.add-participants-bar {
+  padding: 1px;
+}
+
 .add-participants-bar::after {
   content: '\f002';
-  position: relative;
+  position: absolute;
   font-size: 16px !important;
-  left: -15px;
+  right: 25px;
   color: #999999;
   font-weight: 900;
   font-family: 'Font Awesome 5 Free';
 }
 
 .participant-item {
+  
   display: flex;
   justify-content: space-between;
+
+  padding: 0.25rem;
+  margin: 0.25rem;
   align-items: center;
 }
 
@@ -205,6 +218,11 @@ body > div.row {
 /*  */
 
 /* Scrollbar */
+
+/* Delete html scrollbar */
+html::-webkit-scrollbar {
+  display: none;
+}
 
 .scroll::-webkit-scrollbar {
   width: 3px;     /* Tamaño del scroll en vertical */
@@ -1310,6 +1328,13 @@ p {
   }
 }
 
+@media (max-width: 992px) {
+  
+  .add-participants-bar, .participant-item {
+    border-radius: 15px !important;
+  }
+}
+
 @media (max-width: 768px) {
   .link-steper-list {
     position: absolute;
@@ -1321,13 +1346,14 @@ p {
     padding: 1rem 2rem !important;
   }
 
-  .add-participants-bar, .participant-item {
-    border-radius: 15px !important;
-  }
-
-
   .card-container {
     height: 35rem !important;
   }
 
+}
+
+@media (max-width: 576px) {
+  .add-participants-bar::after {
+    content: none;
+  }
 }
