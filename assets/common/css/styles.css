@@ -14,6 +14,51 @@ html {
   overflow-y: scroll;
 }
 
+.progress {
+  height: 2px;
+  background-color: #a7a7a7;
+}
+
+.progress .progress-bar {
+  background-color: #6D7177;
+}
+
+.progress-import .progress-import-close {
+  background-color: #D6D6D6;
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.progress-import {
+  background-color: #EBEBEB;
+  border-radius: 20px;
+}
+
+.btn-import-data {
+  background-color: #56915d;
+  position: absolute;
+  right: 0;
+  color: #fff !important;
+  font-weight: bold !important;
+  margin-top: 0 !important;
+
+  margin-right: 1.2rem;
+  font-size: 12px;
+}
+
+.import-data {
+  color: #56915d;
+  font-weight: 800;
+}
+
+.import-data:hover {
+  color: #56915d;
+  text-decoration: none;
+}
+
 .message-big-card {
   margin: auto;
   width: 53rem; 
@@ -1320,7 +1365,6 @@ p {
   border-radius: 25px;
 }
 
-
 @media (min-width: 992px) {
   .pl-2em {
     padding-left: 3em;
@@ -1333,6 +1377,11 @@ p {
   .navbar-expand-lg .navbar-collapse {
     display: block !important;
   }
+  
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+
 }
 
 @media (max-width: 992px) {
@@ -1340,6 +1389,15 @@ p {
   .add-participants-bar, .participant-item {
     border-radius: 15px !important;
   }
+
+  .btn-import-data {
+    position: initial;
+  }
+
+  .menu-container {
+    padding: 1rem 2rem !important;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -1349,18 +1407,37 @@ p {
     bottom: auto !important;
   }
 
-  .menu-container {
-    padding: 1rem 2rem !important;
-  }
-
   .card-container {
     height: 35rem !important;
   }
 
 }
 
+@media (min-width: 768px) {
+  .menu-container > .navbar-expand-lg.navbar-dark > .collapse {
+    display: inline;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+}
+
 @media (max-width: 576px) {
   .add-participants-bar::after {
     content: none;
+  }
+
+  .menu-container .main-menu {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+/* Responsive menu */
+@media (min-width: 576px) and (max-width: 768px) {
+  .menu-container .main-menu {
+    width: 40%;
+    margin: auto;
   }
 }
