@@ -206,11 +206,28 @@ a#dropdownMenuLink {
   color: #6D7177;
 }
 
-.dropdown-language img.lang-icon {
-  width: 20px !important;
+.dropdown-language a#dropdownMenuLink, .dropdown-profile > a#dropdownMenuLink {
+  height: 44px !important;
 }
 
-.dropdown-menu-container .dropdown-menu > a.dropdown-item {
+.dropdown-menu-container a#dropdownMenuLink > span {
+  font-weight: 550;
+}
+
+.dropdown-language a#dropdownMenuLink > span {
+  font-size: 0.5999rem;
+}
+
+.dropdown-language a.dropdown-item {
+  font-size: 8px !important;
+  padding: 7px !important;
+}
+
+.dropdown-language img.lang-icon {
+  width: 18px !important;
+}
+
+.dropdown-profile .dropdown-menu > a.dropdown-item {
   padding: 5px 15px !important;
 }
 
@@ -764,6 +781,10 @@ p {
 .login__container--label {
   color: #808080 !important;
   text-decoration: underline !important;
+}
+
+.btn-show-groups {
+  padding-left: 4px !important;
 }
 
 .btn {
