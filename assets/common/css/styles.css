@@ -175,6 +175,45 @@ body > div.row {
   height: 100vh !important;
 }
 
+a#dropdownMenuLink {
+  z-index: 10 !important;
+  position: relative !important;
+}
+
+a#dropdownMenuLink {
+  box-shadow: none;
+}
+
+.login a#dropdownMenuLink{
+  background-color: #1D291F;
+}
+
+.dropdown-menu-container .dropdown-menu {
+  top: -9px !important;
+  z-index: 9;
+}
+
+.dropdown-profile .btn-exit {
+  font-size: 12px;
+  margin-left: 5px;
+  font-size: 10px;
+  padding: 0px 10px !important;
+  font-weight: bold;
+}
+
+.dropdown-profile .btn-exit span {
+  font-weight: bold;
+  color: #6D7177;
+}
+
+.dropdown-language img.lang-icon {
+  width: 20px !important;
+}
+
+.dropdown-menu-container .dropdown-menu > a.dropdown-item {
+  padding: 5px 15px !important;
+}
+
 .dropdown-menu {
   min-width: auto;
   overflow: hidden;
