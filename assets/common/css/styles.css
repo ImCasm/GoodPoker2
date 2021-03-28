@@ -14,6 +14,10 @@ html {
   overflow-y: scroll;
 }
 
+.font-weight-semibold {
+  font-weight: 600 !important;
+}
+
 .admin-tag {
   padding: 5px 9px;
   margin-left: 1em;
