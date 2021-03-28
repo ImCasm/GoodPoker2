@@ -35,11 +35,11 @@ html {
 
 .progress {
   height: 2px;
-  background-color: #a7a7a7;
+  background-color: #DBDBDB;
 }
 
 .progress .progress-bar {
-  background-color: #6D7177;
+  background-color: #ACAEB1;
 }
 
 .progress-import .progress-import-close {
@@ -49,6 +49,8 @@ html {
   height: 20px;
   text-align: center;
   line-height: 20px;
+  color: #6D7177;
+  font-weight: 600;
 }
 
 .progress-import {
