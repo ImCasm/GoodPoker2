@@ -73,8 +73,7 @@ html {
 .message-big-card {
   margin: auto;
   width: 100%; 
-  height: 22rem;
-  max-height: 400px;
+  min-height: 22rem;
 }
 
 .invitation-card {
@@ -1499,10 +1498,6 @@ p {
     position: absolute;
     font-size: 7px;
     bottom: auto !important;
-  }
-
-  .card-container {
-    height: 35rem !important;
   }
 
   .delete-review-message {
