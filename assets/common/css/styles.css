@@ -560,6 +560,12 @@ a#dropdownMenuLink:hover {
   width: 30px;
   height: 30px;
 }
+
+.img-icon-45 {
+  width: 45px;
+  height: 45px;
+}
+
 .img-icon-50 {
   width: 50px;
 }
@@ -786,6 +792,10 @@ p {
 .login__container--label {
   color: #808080 !important;
   text-decoration: underline !important;
+}
+
+.btn-user-action {
+  padding: 0.6rem 1.5rem;
 }
 
 .btn-show-groups {
@@ -1466,6 +1476,14 @@ p {
 
   .photo-newGroup::after {
     left: 44%;
+  }
+
+  .dropdown-language a#dropdownMenuLink {
+    z-index: 8 !important;
+  }
+
+  .dropdown-language .dropdown-menu.show {
+    z-index: 7 !important;
   }
 
 }
