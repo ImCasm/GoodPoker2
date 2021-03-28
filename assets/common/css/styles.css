@@ -1505,6 +1505,10 @@ p {
     height: 35rem !important;
   }
 
+  .delete-review-message {
+    text-align: center;
+  }
+
 }
 
 @media (min-width: 768px) {
