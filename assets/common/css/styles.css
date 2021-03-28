@@ -20,6 +20,10 @@ html {
   font-size: 9px;
 }
 
+.placeholder-no-padding::placeholder {
+  padding: 0 !important;
+}
+
 .placeholder-dark::placeholder {
   color: #6D7177 !important;
   font-weight: 500;
