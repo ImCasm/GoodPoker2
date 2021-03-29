@@ -203,54 +203,228 @@
           </div>
         </div>
       </div>
-      <div class="row ml-2">
-        <h3 class="font-rajdhani profile1 m-0 pt-4">Importação</h3>
-      </div>
-      <div class="container pt-4 pb-4">
-        <nav>
-          <div class="nav" id="nav-tab" role="tablist">
-            <a class="import-data nav-link active pl-0 ml-2" id="nav-files-tab" data-toggle="tab" href="#nav-files"
-              role="tab" aria-controls="nav-home" aria-selected="true">
-              Arquivos importados
-            </a>
-            <a class="import-data nav-link pl-0 ml-2" id="nav-import-tab" data-toggle="tab" href="#nav-import"
-              role="tab" aria-controls="nav-profile" aria-selected="false">
-              Dados de importação
-            </a>
-            <a class="import-data btn btn-import-data" href="import_file.html" role="tab">
-              IMPORTAR ARQUIVO
-            </a>
-          </div>
-        </nav>
-        <div class="tab-content" id="nav-tabContent">
-          <div class="tab-pane fade show active mt-3" id="nav-files" role="tabpanel" aria-labelledby="nav-files-tab">
-            <div>
-              <h2>Content 1</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis facilis expedita assumenda eum
-                veritatis placeat, provident neque quidem quam debitis sequi natus earum maxime repellat saepe. Eligendi
-                dicta in inventore?
-                Excepturi sed distinctio nisi voluptates quasi deleniti ipsam similique mollitia, deserunt veniam
-                perspiciatis debitis culpa ut dolores quisquam facilis. Exercitationem dolorem dolorum laboriosam quo
-                nemo? Inventore deleniti praesentium maxime ea?
-                Accusantium distinctio obcaecati possimus sapiente delectus, earum aliquid cum neque harum. Nesciunt eum
-                laborum corporis ducimus quibusdam beatae tempore eligendi consequuntur iure vel fuga, expedita
-                assumenda distinctio possimus laudantium dolores.
-              </p>
+      <div class="container pb-4">
+        <div class="row m-0">
+          <h3 class="font-rajdhani profile1 m-0 pt-4">Importação</h3>
+        </div>
+        <div class="row m-0 mt-3 position-relative">
+          <nav>
+            <div class="nav">
+              <a class="import-data nav-link active pl-0" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                role="tab" aria-controls="nav-home" aria-selected="true">
+                Arquivos importados
+              </a>
+              <a class="import-data nav-item nav-link pl-0" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                role="tab" aria-controls="nav-profile" aria-selected="false">
+                Dados de importação
+              </a>
+
+              <a class="import-data btn btn-import-data m-0" href="import_file.html">
+                IMPORTAR ARQUIVO
+              </a>
+            </div>
+          </nav>
+        </div>
+        <div class="mt-3 tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="row p-0 p-0">
+              <div class="col">
+                <div class="table-responsive">
+                  <table class="table table-import">
+                    <thead class=" table-head">
+                      <tr class="table-head-text">
+                        <th class="pl-3" scope="col">Categoria</th>
+                        <th scope="col">Número</th>
+                        <th scope="col">Data</th>
+                        <th scope="col">Jugador</th>
+                        <th scope="col">Buy-in</th>
+                        <th scope="col">Re-buy</th>
+                        <th scope="col">Posição</th>
+                        <th scope="col">Prêmio</th>
+                        <th scope="col">Status <br> da importação</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-b-text">
+                      <tr>
+                        <th scope="row">Torneio
+                          <div>
+                            <span
+                              class="badge bg-light-green badge-pill text-white font-weight-bold font-size-9 pl-2 pr-2 pt-1 pb-1">NOVO</span>
+                          </div>
+                        </th>
+                        <td>
+                          0244504450451
+                          <div>
+                            <span class="text-gray  font-weight-normal">USD Holdem No
+                              Limit</span>
+                          </div>
+                        </td>
+                        <td>31/05/20</td>
+                        <td>Marcos</td>
+                        <td>
+                          $0.50
+                          <div class="text-gray pr-0 pl-0">
+                            <span class="text-gray pr-0 pl-0">$0.50 + $2.20</span>
+                          </div>
+                        </td>
+                        <td></td>
+                        <td>46</td>
+                        <td>$3.45</td>
+                        <td><span class="text-gray">Sucesso</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Cash Game
+                          <div>
+                            <span
+                              class="badge bg-light-green badge-pill text-white font-weight-bold font-size-9 pl-2 pr-2 pt-1 pb-1">NOVO</span>
+                          </div>
+                        </th>
+                        <td>0244504450451
+                          <div>
+                            <span class="text-gray">USD Holdem No Limit</span>
+                          </div>
+                        </td>
+                        <td>31/05/20</td>
+                        <td>Marcos</td>
+                        <td>$0.50
+                          <div>
+                            <span class="text-gray">$0.50 + $2.20</span>
+                          </div>
+                        </td>
+                        <td></td>
+                        <td>46</td>
+                        <td>$3.45</td>
+                        <td><span class="text-gray">Sucesso</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Cash Game
+                          <div>
+                            <span
+                              class="badge bg-light-green badge-pill text-white font-weight-bold font-size-9 pl-2 pr-2 pt-1 pb-1">NOVO</span>
+                          </div>
+                        </th>
+                        <td>0244504450451
+                          <div>
+                            <span class="text-gray">USD Holdem No Limit</span>
+                          </div>
+                        </td>
+                        <td>31/05/20</td>
+                        <td>Marcos</td>
+                        <td>$0.50
+                          <div>
+                            <span class="text-gray">$0.50 + $2.20</span>
+                          </div>
+                        </td>
+                        <td></td>
+                        <td>46</td>
+                        <td>$3.45</td>
+                        <td><span class="text-gray">
+                            Erro <i class="fas fa-exclamation-circle text-yellow"></i>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Torneio</th>
+                        <td>0244504450451
+                          <div>
+                            <span class="text-gray">USD Holdem No Limit</span>
+                          </div>
+                        </td>
+                        <td>31/05/20</td>
+                        <td>Marcos</td>
+                        <td>$0.50
+                          <div>
+                            <span class="text-gray">$0.50 + $2.20</span>
+                          </div>
+                        </td>
+                        <td></td>
+                        <td>46</td>
+                        <td>$3.45</td>
+                        <td><span class="text-gray">
+                            Erro <i class="fas fa-exclamation-circle text-yellow"></i>
+                          </span></td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!--Row table-->
+
             </div>
           </div>
-          <div class="tab-pane fade mt-3" id="nav-import" role="tabpanel" aria-labelledby="nav-import-tab">
-            <div>
-              <h2>Content 2</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sunt natus quae voluptatem
-                temporibus laboriosam error illum, vel molestias deserunt et officiis repellat fugiat ducimus dolorum
-                eius corrupti quasi nostrum!
-                Nisi veritatis provident possimus vel mollitia repellat voluptatem assumenda officiis rerum unde
-                voluptates, placeat doloribus culpa maxime sunt illo sint consequatur asperiores. Natus debitis aliquid
-                qui, illo quia optio a.
-                Adipisci, maiores dolor necessitatibus a neque provident consequuntur et cupiditate fuga! Doloremque
-                consequuntur, natus autem unde nesciunt voluptates dicta earum libero. Soluta, repellendus hic culpa
-                pariatur dolores qui vero velit.</p>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div class="row pt-2 m-0 p-0">
+              <!--card-->
+              <div class="card pl-4 card-container card-rounded w-100">
+                <div class="card-head pt-3">
+                  <h6 class="text-gray font-weight-bold">Visão Geral dos Dados</h6>
+                </div>
+                <div class="card-body pl-0 pt-1">
+                  <div class="row pl-0 mt-2">
+                    <div class="col-md-6 pt-1">
+                      <button
+                        class="btn btn-small-12px border-green font-weight-bold text-green m-0 pr-1 pl-4 pt-2 pb-2">
+                        Plataforma <i class="fas ml-3 fa-angle-down text-green pr-3"></i>
+                      </button>
+                      <div class="row pt-3">
+                        <div class="col-md-6">
+                          <p class="text-gray font-weight-semibold font-size-12 mb-0 ">Torneios</p>
+                          <h5 class="text-gray font-weight-SemiBold mt-1 mb-0">23.762</h5>
+                          <p class="text-gray font-size-12 text-light-gray font-weight-normal mb-0 mt-0">+214</p>
+                        </div>
+                        <div class="col-md-6">
+                          <p class="text-gray font-weight-semibold font-size-12 mb-0 ">Mãos</p>
+                          <h5 class="text-gray font-weight-SemiBold mt-1 mb-0">154.224</h5>
+                          <p class="text-gray font-size-12 text-light-gray font-weight-normal mb-0 mt-0">+2</p>
+                        </div>
+                      </div>
+                      <!--Graph 1-->
+                      <div class="row p-0 m-0 pt-5">
+                        <div class="col-md-12 pl-0">
+                          <p class="text-gray font-weight-semibold font-size-12 ">Torneios</p>
+                          <div>
+                            <canvas></canvas>
+                          </div>
+                        </div>
+                      </div>
+                      <!--Graph 1-->
+                      <!--Graph 2-->
+                      <div class="row p-0 m-0 pt-5">
+                        <div class="col-md-12 pl-0">
+                          <p class="text-gray font-weight-semibold font-size-12 ">Mãos</p>
+                          <div>
+                            <canvas></canvas>
+                          </div>
+                        </div>
+                      </div>
+                      <!--Graph 2-->
+                    </div>
+                    <div class="col-md-6 pt-1">
+                      <h6 class="text-gray font-weight-bold">Quantidade de Torneios e Mãos<br>
+                        Importadas Temporal
+                      </h6>
+                      <button
+                        class="btn btn-small-12px border-green font-weight-bold text-green m-0 mt-3 pr-1 pl-3 pt-2 pb-2">
+                        Últimos 30 dias<i class="fas ml-3 fa-angle-down text-green pr-3"></i>
+                      </button>
+                      <!--Graph 3-->
+                      <div class="row p-0 m-0 pt-3">
+                        <div class="col-md-12 pl-0">
+                          <p class="text-gray font-weight-SemiBold font-size-12 "></p>
+                          <div>
+                            <canvas></canvas>
+                          </div>
+                        </div>
+
+                      </div>
+                      <!--Graph 3-->
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!--card-->
             </div>
           </div>
         </div>
