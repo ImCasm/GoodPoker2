@@ -128,7 +128,7 @@ html {
   font-size: 12px;
 }
 
-.import-data {
+.import-data[role="tab"] {
   color: #56915d;
   margin-right: 1rem;
   text-decoration: none;
@@ -136,7 +136,7 @@ html {
   font-weight: 800;
 }
 
-.import-data.active {
+.import-data.active[role="tab"] {
   color: #6D7177;
   font-weight: 650 !important;
   border-bottom: 3px solid #6D7177;
