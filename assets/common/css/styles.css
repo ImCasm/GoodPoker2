@@ -130,11 +130,22 @@ html {
 
 .import-data {
   color: #56915d;
+  margin-right: 1rem;
+  text-decoration: none;
+  padding-right: 0 !important;
+  font-weight: 800;
+}
+
+.import-data.active {
+  color: #6D7177;
+  font-weight: 650 !important;
+  border-bottom: 3px solid #6D7177;
+  padding-right: 0  !important;
   font-weight: 800;
 }
 
 .import-data:hover {
-  color: #56915d;
+  color:  #6D7177;
   text-decoration: none;
 }
 
