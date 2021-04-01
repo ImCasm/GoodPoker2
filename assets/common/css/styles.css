@@ -14,6 +14,16 @@ html {
   overflow-y: scroll;
 }
 
+.hr-v {
+    border: none;
+    border-left: 2px solid #F2F2F2;
+    width: 1px;
+    height: 35px;
+    margin: auto;
+    position: relative;
+    bottom: 50px !important;
+}
+
 .card {
   border: none;
 }
@@ -151,8 +161,7 @@ html {
 
 .message-big-card {
   margin: auto;
-  width: 100%; 
-  min-height: 22rem;
+  width: 100%;
 }
 
 .invitation-card {
@@ -1588,6 +1597,10 @@ p {
     text-align: center;
   }
 
+  .hr-v {
+    display: none;
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -1613,6 +1626,11 @@ p {
   .photo-newGroup::after {
     left: 42%;
   }
+
+  .delete-review-buttons div.text-left, .delete-review-buttons div.text-right {
+    text-align: center !important;
+  }
+
 }
 
 /* Responsive menu */
